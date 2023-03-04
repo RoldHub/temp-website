@@ -1,8 +1,16 @@
 h1,
 h2,
 h3,
-p {
+h4,
+p,
+nav {
   text-align: center;
+}
+
+nav .time {
+  display: inline-block;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 h1 {
@@ -15,6 +23,10 @@ h2 {
 
 h3 {
   font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
 }
 
 p {
