@@ -27,17 +27,17 @@ function setTime() {
 
   // 问候语
   let greetingText = '';
-  if ((hourNum > 5) & (hourNum <= 10)) {
+  if ((hourNum >= 6) & (hourNum < 12)) {
     greetingText = '早上好！';
-  } else if ((hourNum > 10) & (hourNum <= 14)) {
+  } else if ((hourNum >= 12) & (hourNum < 14)) {
     greetingText = '中午好！';
-  } else if ((hourNum > 14) & (hourNum <= 18)) {
+  } else if ((hourNum >= 14) & (hourNum < 18)) {
     greetingText = '下午好！';
-  } else if ((hourNum > 18) & (hourNum <= 22)) {
+  } else if ((hourNum >= 18) & (hourNum < 22)) {
     greetingText = '晚上好！';
   } else if (
-    ((hourNum > 22) & (hourNum <= 24)) |
-    ((hourNum >= 0) & (hourNum <= 5))
+    ((hourNum >= 22) & (hourNum <= 24)) |
+    ((hourNum >= 0) & (hourNum < 6))
   ) {
     greetingText = '夜深了~';
   }
@@ -49,4 +49,4 @@ function setTime() {
   greetingElement.innerText = greetingText;
 }
 
-setInterval(setTime, 100);
+setInterval(setTime, 50);
