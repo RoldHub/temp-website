@@ -44,6 +44,7 @@ p {
 
 .history {
   list-style: none;
+  padding-inline-start: 0;
 }
 .history .date {
   font-weight: bold;
